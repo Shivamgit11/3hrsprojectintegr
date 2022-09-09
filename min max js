@@ -1,0 +1,29 @@
+class bstnode 
+{
+    //Function to check whether a Binary Tree is BST or not.
+    constructor{
+        this.root = root;
+        this.root.right;
+        this.root.left;
+    }
+
+    findmin(root){
+        if(root == null) {
+            console.log("Error- Tree is Empty");
+            return -1;
+        }
+        while(root.left!=null){
+            root = root.left;
+        }
+        return root.data;
+    }
+    findmax(root){
+        if(root == null){
+            console.log("Error-- Tree is Empty");
+        }
+        while(root.right != null){
+            root = root.right;
+        }
+        return root.data;
+    }
+}
